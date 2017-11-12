@@ -256,14 +256,17 @@ void MainWindow::on_actionOpen_triggered()
     ui->a_weapons->setCurrentIndex(buffer->weapon_type);
 
     ui->a_vehi_type_1->setCurrentIndex(buffer->vehicle_red.type);
+
+    ui->a_vehi_type_2->setCurrentIndex(buffer->vehicle_blue.type);
+
+    this->update_vehicle_tab();
+
     ui->a_num_banshees_1->setValue(buffer->vehicle_red.banshees);
     ui->a_num_ghosts_1->setValue(buffer->vehicle_red.ghosts);
     ui->a_num_rockets_1->setValue(buffer->vehicle_red.rocket_warthogs);
     ui->a_num_scorpions_1->setValue(buffer->vehicle_red.scorpions);
     ui->a_num_turrets_1->setValue(buffer->vehicle_red.gun_turrets);
     ui->a_num_warthogs_1->setValue(buffer->vehicle_red.warthogs);
-
-    ui->a_vehi_type_2->setCurrentIndex(buffer->vehicle_blue.type);
     ui->a_num_banshees_2->setValue(buffer->vehicle_blue.banshees);
     ui->a_num_ghosts_2->setValue(buffer->vehicle_blue.ghosts);
     ui->a_num_rockets_2->setValue(buffer->vehicle_blue.rocket_warthogs);
@@ -284,8 +287,6 @@ void MainWindow::on_actionOpen_triggered()
     fileLocation = fileName;
 
     ui->a_blue_vehi_box->setEnabled(buffer->team_play);
-
-    this->update_vehicle_tab();
 
     free(buffer);
 }

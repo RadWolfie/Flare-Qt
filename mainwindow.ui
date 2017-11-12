@@ -72,9 +72,12 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>171</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The flags' spawns are switched. Red team's flag spawns at the blue base, and blue team's flag spawns at the red base.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Assault</string>
@@ -85,9 +88,12 @@
          <rect>
           <x>10</x>
           <y>30</y>
-          <width>171</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The flag cannot be manually picked up and reset by team members.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Flag Must Reset</string>
@@ -98,9 +104,12 @@
          <rect>
           <x>10</x>
           <y>50</y>
-          <width>171</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Team members cannot score if their flag has been taken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Flag Must Be At Home To Score</string>
@@ -109,9 +118,9 @@
        <widget class="QLabel" name="label_34">
         <property name="geometry">
          <rect>
-          <x>180</x>
+          <x>190</x>
           <y>80</y>
-          <width>81</width>
+          <width>71</width>
           <height>21</height>
          </rect>
         </property>
@@ -119,7 +128,7 @@
          <string>(0 = disabled)</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
         </property>
        </widget>
        <widget class="QLabel" name="label_35">
@@ -131,8 +140,11 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Captures to Win:</string>
+         <string>Score Limit:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="a_ctf_caps_to_win">
@@ -143,6 +155,9 @@
           <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -162,6 +177,9 @@
           <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If set, each team will take turns as offense and defense. The team on offense must capture the flag, while the team on defense must prevent the team on offense from scoring.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="suffix">
          <string> sec</string>
@@ -185,6 +203,9 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If set, each team will take turns as offense and defense. The team on offense must capture the flag, while the team on defense must prevent the team on offense from scoring.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Single Flag Time:</string>
         </property>
@@ -196,9 +217,12 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>81</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players are assigned targets. Killing non-targets will not increase the player's score.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Kill in Order</string>
@@ -209,9 +233,12 @@
          <rect>
           <x>10</x>
           <y>30</y>
-          <width>81</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each death increase the player's speed. Speed will gradually reduce to normal.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Death Bonus</string>
@@ -222,9 +249,12 @@
          <rect>
           <x>10</x>
           <y>50</y>
-          <width>81</width>
+          <width>411</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each kill makes the player slower. Speed will gradually increase back to normal.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Kill Penalty</string>
@@ -234,23 +264,29 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>80</y>
+          <y>110</y>
           <width>61</width>
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Kills to Win:</string>
+         <string>Score Limit:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="a_slayer_kills_to_win">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>80</y>
+          <x>100</x>
+          <y>110</y>
           <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -269,9 +305,12 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>51</width>
+          <width>61</width>
           <height>21</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There are three sub-gametypes in Oddball:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal Oddball&lt;/span&gt; is standard oddball. The player automatically scores while holding the ball, but only while the ball is visible.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Reverse Tag&lt;/span&gt; does not feature a ball. Instead, the player automatically scores over time while being It. To be It, the player must kill an enemy who is It, or if nobody is It, then any enemy.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Juggernaut&lt;/span&gt; is similar to Reverse Tag, but the player only accumulates points with kills rather than time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Ball Type:</string>
@@ -280,11 +319,14 @@
        <widget class="QComboBox" name="a_oddball_ball_type">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>70</x>
           <y>10</y>
-          <width>361</width>
+          <width>351</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There are three sub-gametypes in Oddball:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal Oddball&lt;/span&gt; is standard oddball. The player automatically scores while holding the ball, but only while the ball is visible.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Reverse Tag&lt;/span&gt; does not feature a ball. Instead, the player automatically scores over time while being It. To be It, the player must kill an enemy who is It, or if nobody is It, then any enemy.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Juggernaut&lt;/span&gt; is similar to Reverse Tag, but the player only accumulates points with kills rather than time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <item>
          <property name="text">
@@ -307,9 +349,12 @@
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>71</width>
+          <width>91</width>
           <height>21</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the trait players who have the ball or are It will receive.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;No Traits&lt;/span&gt; does nothing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Invisible&lt;/span&gt; gives the player active camouflage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Extra Damage&lt;/span&gt; doubles the player's dealt damage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Resist Damage&lt;/span&gt; halves the player's taken damage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Trait With Ball:</string>
@@ -318,11 +363,14 @@
        <widget class="QComboBox" name="a_oddball_trait_with_ball">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>110</x>
           <y>40</y>
-          <width>121</width>
+          <width>101</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the trait players who have the ball or are It will receive.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;No Traits&lt;/span&gt; does nothing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Invisible&lt;/span&gt; gives the player active camouflage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Extra Damage&lt;/span&gt; doubles the player's dealt damage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Resist Damage&lt;/span&gt; halves the player's taken damage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <item>
          <property name="text">
@@ -354,6 +402,9 @@
           <height>22</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the speed the player will move if holding the ball or if It.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Slow&lt;/span&gt; reduces the player's speed.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal&lt;/span&gt; will not adjust the player's speed.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Fast&lt;/span&gt; increases the player's speed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="currentIndex">
          <number>1</number>
         </property>
@@ -382,6 +433,9 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the speed the player will move if holding the ball or if It.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Slow&lt;/span&gt; reduces the player's speed.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal&lt;/span&gt; will not adjust the player's speed.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Fast&lt;/span&gt; increases the player's speed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Speed With Ball:</string>
         </property>
@@ -389,11 +443,14 @@
        <widget class="QComboBox" name="a_oddball_trait_without_ball">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>110</x>
           <y>70</y>
-          <width>111</width>
+          <width>101</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the trait players who do not have the ball or are not It will receive.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;No Traits&lt;/span&gt; does nothing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Invisible&lt;/span&gt; gives the player active camouflage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Extra Damage&lt;/span&gt; doubles the player's dealt damage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Resist Damage&lt;/span&gt; halves the player's taken damage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <item>
          <property name="text">
@@ -425,6 +482,9 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the trait players who do not have the ball or are not It will receive.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;No Traits&lt;/span&gt; does nothing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Invisible&lt;/span&gt; gives the player active camouflage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Extra Damage&lt;/span&gt; doubles the player's dealt damage.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Resist Damage&lt;/span&gt; halves the player's taken damage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Trait Without Ball:</string>
         </property>
@@ -437,6 +497,9 @@
           <width>61</width>
           <height>21</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the number of balls that will spawn, or the maximum number of players who can be It at a given time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Ball Count:</string>
@@ -451,6 +514,9 @@
           <height>22</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the number of balls that will spawn, or the maximum number of players who can be It at a given time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="minimum">
          <number>1</number>
         </property>
@@ -462,23 +528,29 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>100</y>
-          <width>121</width>
+          <y>110</y>
+          <width>81</width>
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Minutes or Points to Win:</string>
+         <string>Score Limit:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="a_oddball_max_points">
         <property name="geometry">
          <rect>
-          <x>140</x>
-          <y>100</y>
-          <width>71</width>
+          <x>100</x>
+          <y>110</y>
+          <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -494,10 +566,13 @@
         <property name="geometry">
          <rect>
           <x>220</x>
-          <y>100</y>
+          <y>110</y>
           <width>101</width>
           <height>21</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The ball will spawn at a random location.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Random Ball</string>
@@ -510,9 +585,12 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>70</width>
+          <width>101</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The hill changes locations periodically.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Moving Hill</string>
@@ -522,23 +600,29 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>40</y>
-          <width>81</width>
+          <y>110</y>
+          <width>91</width>
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Minutes to Win:</string>
+         <string>Score Limit:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="a_king_minutes_to_win">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>40</y>
-          <width>71</width>
+          <x>100</x>
+          <y>110</y>
+          <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -557,9 +641,12 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>41</width>
+          <width>61</width>
           <height>21</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the order in which a player can score a race flag.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal&lt;/span&gt; requires the flag to be reached in order.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Any Order&lt;/span&gt; allows the flags to be reached in any order as long as all of them are reached.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Rally&lt;/span&gt; requires the flag to be reached in order, but all players have the same exact destination to reach.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Order:</string>
@@ -568,11 +655,14 @@
        <widget class="QComboBox" name="a_race_order">
         <property name="geometry">
          <rect>
-          <x>50</x>
+          <x>80</x>
           <y>10</y>
-          <width>181</width>
+          <width>151</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the order in which a player can score a race flag.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Normal&lt;/span&gt; requires the flag to be reached in order.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Any Order&lt;/span&gt; allows the flags to be reached in any order as long as all of them are reached.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Rally&lt;/span&gt; requires the flag to be reached in order, but all players have the same exact destination to reach.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <item>
          <property name="text">
@@ -599,6 +689,9 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The teams' scores will be determined by a certain criteria.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Lowest Member's Score&lt;/span&gt; uses the lowest team member's score per team.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Highest Member's Score&lt;/span&gt; uses the leading team member's score per team.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Total Score&lt;/span&gt; adds all team members' scores per team.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Team Score:</string>
         </property>
@@ -611,6 +704,9 @@
           <width>151</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The teams' scores will be determined by a certain criteria.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Lowest Member's Score&lt;/span&gt; uses the lowest team member's score per team.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Highest Member's Score&lt;/span&gt; uses the leading team member's score per team.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Total Score&lt;/span&gt; adds all team members' scores per team.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <item>
          <property name="text">
@@ -632,23 +728,29 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>70</y>
-          <width>61</width>
+          <y>110</y>
+          <width>81</width>
           <height>21</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Laps to Win:</string>
+         <string>Score Limit:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="a_race_laps_to_win">
         <property name="geometry">
          <rect>
-          <x>80</x>
-          <y>70</y>
-          <width>151</width>
+          <x>100</x>
+          <y>110</y>
+          <width>81</width>
           <height>22</height>
          </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game will end when a team's score reaches or exceeds this value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -671,6 +773,9 @@
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This chooses the base gametype to use.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;CTF&lt;/span&gt; requires players to capture flags to win. This gametype requires teams to be enabled.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Slayer&lt;/span&gt; requires players to kill to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Oddball&lt;/span&gt; requires players to either hold an oddball for a set amount of time or be It for a set amount of time or kills to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;King of the Hill&lt;/span&gt; requires players to stand on a hill for a set amount of time to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Race&lt;/span&gt; requires players to reach destination points to win.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>Gametype:</string>
       </property>
@@ -684,6 +789,9 @@
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name your game variant to save it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>Game Variant Name:</string>
       </property>
@@ -696,6 +804,9 @@
         <width>371</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This chooses the base gametype to use.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;CTF&lt;/span&gt; requires players to capture flags to win. This gametype requires teams to be enabled.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Slayer&lt;/span&gt; requires players to kill to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Oddball&lt;/span&gt; requires players to either hold an oddball for a set amount of time or be It for a set amount of time or kills to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;King of the Hill&lt;/span&gt; requires players to stand on a hill for a set amount of time to win.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Race&lt;/span&gt; requires players to reach destination points to win.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <item>
        <property name="text">
@@ -732,6 +843,9 @@
         <height>20</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name your game variant to save it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="inputMask">
        <string/>
       </property>
@@ -751,6 +865,9 @@
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game ends when this time has been exceeded.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>Time Limit:</string>
       </property>
@@ -763,6 +880,9 @@
         <width>121</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The game ends when this time has been exceeded.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="suffix">
        <string> min</string>
@@ -802,6 +922,9 @@
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There are different ways objectives can be presented to the player.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Motion Sensor&lt;/span&gt; puts the objectives on the motion sensor as bright white circles.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Nav Point&lt;/span&gt; puts the objectives on the HUD as a nav point.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;None&lt;/span&gt; does not put the objective anywhere on the HUD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>Show Objectives On:</string>
       </property>
@@ -815,6 +938,9 @@
         <height>22</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There are different ways objectives can be presented to the player.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Motion Sensor&lt;/span&gt; puts the objectives on the motion sensor as bright white circles.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Nav Point&lt;/span&gt; puts the objectives on the HUD as a nav point.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;None&lt;/span&gt; does not put the objective anywhere on the HUD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <item>
        <property name="text">
         <string>Motion Sensor</string>
@@ -822,7 +948,7 @@
       </item>
       <item>
        <property name="text">
-        <string>HUD</string>
+        <string>Nav Point</string>
        </property>
       </item>
       <item>
@@ -839,11 +965,14 @@
      <widget class="QSlider" name="a_health_slider">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>80</x>
         <y>10</y>
-        <width>231</width>
+        <width>211</width>
         <height>21</height>
        </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increasing this value decreases damage taken, while reducing it increases damage taken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="minimum">
        <number>50</number>
@@ -869,12 +998,15 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>46</width>
+        <width>71</width>
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increasing this value decreases damage taken, while reducing it increases damage taken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
-       <string>Health:</string>
+       <string>Health Scale:</string>
       </property>
      </widget>
      <widget class="QCheckBox" name="a_shields_enabled">
@@ -885,6 +1017,9 @@
         <width>51</width>
         <height>21</height>
        </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If shields are disabled, then the player will not spawn with shields and the overshield powerup will not appear.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
        <string>Shields</string>
@@ -915,7 +1050,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Upon respawning, the player will be assigned the same weapons throughout each map, rather than the weapons specific to the gametype and map. On Default weapons, the player will be assigned an assault rifle and pistol, with two fragmentation grenades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Upon respawning, the player will be assigned the same weapons throughout each map. On Default weapons, the player will be assigned an assault rifle and pistol, with two fragmentation grenades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Generic Starting Weapons</string>
@@ -961,6 +1096,9 @@
          <width>131</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;These change the weapons that you will find.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Default&lt;/span&gt; will not modify weapons placed by the map designer.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Pistols&lt;/span&gt; will cause only pistols and plasma pistols to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Rifles&lt;/span&gt; will cause only assault rifles and plasma rifles to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Plasma Weapons&lt;/span&gt; will cause only plasma weapons to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Snipers&lt;/span&gt; will cause only sniper rifles and pistols to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;No Snipers&lt;/span&gt; will prevent sniper rifles and pistols from appearing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Rocket Launchers&lt;/span&gt; will replace all weapons with rocket launchers.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shotguns&lt;/span&gt; will replace all weapons with shotguns.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Short Range&lt;/span&gt; will only cause short-range weapons to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Human Weapons&lt;/span&gt; will prevent covenant weapons from appearing.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Covenant Weapons&lt;/span&gt; will cause only covenant weapons to appear.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Classic&lt;/span&gt; will prevent the fuel rod gun and flame thrower from appearing (like Xbox).&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Heavy Weapons&lt;/span&gt; allow only rocket launchers, fuel rod guns, and flamethrowers to appear.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <item>
         <property name="text">
@@ -1051,7 +1189,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the base amount of respawn time, before any penalty is applied. Respawning can not take longer than 300 seconds, regardless of any penalties.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the base amount of respawn time, before any penalty is applied.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="statusTip">
         <string/>
@@ -1073,7 +1211,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the respawn timeupon the player committing suicide.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the player's respawn time upon committing suicide.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Suicide Penalty:</string>
@@ -1089,7 +1227,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the player's next respawn time for every time the player kills one of his or her teammates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the player's next respawn time for every time the player kills a teammate.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Betrayal Penalty:</string>
@@ -1105,7 +1243,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For every death, the player's respawn timer is increased by this amount of time. For every kill, it is reduced by this amount of time, until the respawn timer is back to normal.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For every death, the player's respawn timer is increased by this amount of time.&lt;/p&gt;&lt;p&gt;For every kill, it is reduced by this amount of time, until the respawn timer is back to normal.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Growth:</string>
@@ -1119,6 +1257,9 @@
          <width>81</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the base amount of respawn time, before any penalty is applied.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="suffix">
         <string> sec</string>
@@ -1142,6 +1283,9 @@
          <height>22</height>
         </rect>
        </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the player's respawn time upon committing suicide.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
        <property name="suffix">
         <string> sec</string>
        </property>
@@ -1164,6 +1308,9 @@
          <height>22</height>
         </rect>
        </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This penalty is added to the player's next respawn time for every time the player kills a teammate.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
        <property name="suffix">
         <string> sec</string>
        </property>
@@ -1185,6 +1332,9 @@
          <width>81</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For every death, the player's respawn timer is increased by this amount of time.&lt;/p&gt;&lt;p&gt;For every kill, it is reduced by this amount of time, until the respawn timer is back to normal.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The player's respawn time cannot be increased to a value that would exceed 300 seconds.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="suffix">
         <string> sec</string>
@@ -1222,7 +1372,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When a player's deaths have reached their number of lives, they will not be able to respawn.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The player will not be able to respawn if deaths equal lives.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="statusTip">
         <string/>
@@ -1242,6 +1392,9 @@
          <width>71</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The player will not be able to respawn if deaths equal lives.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>(0 = unlimited)</string>
@@ -1289,7 +1442,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players will appear on the motion sensor, depending on this setting. The motion sensor will not appear if neither players nor objectives appear on motion sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players will appear on the motion sensor, depending on this setting. The motion sensor will not appear if neither players nor objectives appear on motion sensor.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Nobody&lt;/span&gt; prevents any player from appearing on the motion sensor.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Team Members&lt;/span&gt; will show team members on motion sensor as bright yellow.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;All Players&lt;/span&gt; will show team members on the motion sensor as bright yellow and enemies on the motion sensor as red.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="statusTip">
         <string/>
@@ -1309,6 +1462,9 @@
          <width>101</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players will appear on the motion sensor, depending on this setting. The motion sensor will not appear if neither players nor objectives appear on motion sensor.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Nobody&lt;/span&gt; prevents any player from appearing on the motion sensor.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Team Members&lt;/span&gt; will show team members on motion sensor as bright yellow.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;All Players&lt;/span&gt; will show team members on the motion sensor as bright yellow and enemies on the motion sensor as red.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <item>
         <property name="text">
@@ -1334,6 +1490,9 @@
          <width>101</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The player will not be able to respawn if deaths equal lives.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="minimum">
         <number>0</number>
@@ -1363,12 +1522,12 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>91</width>
+         <width>151</width>
          <height>17</height>
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Teams will be enabled. This cannot and should never be disabled on CTF.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Teams will be enabled. Disabling teams will force vehicles to spawn symmetrically.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Enable Teams</string>
@@ -1379,12 +1538,12 @@
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>91</width>
+         <width>151</width>
          <height>17</height>
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players can only change teams if the destination team is smaller than their team. This will not proactively balance the teams. Players can leave the game, for example, to cause the teams to become unbalanced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Players cannot change teams to a larger team.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Team Balancing</string>
@@ -1398,6 +1557,9 @@
          <width>81</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Setting friendly fire controls how damage is handled with teammates.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Off&lt;/span&gt; will prevent damage on teammates completely.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;On&lt;/span&gt; will not restrict damage on teammates.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shields Only&lt;/span&gt; will restrict damage on teammates to only affect shields.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Explosions Only&lt;/span&gt; will restrict damage on teammates to only explosions.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <item>
         <property name="text">
@@ -1462,6 +1624,9 @@
         <height>22</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increasing this value decreases damage taken, while reducing it increases damage taken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="suffix">
        <string>%</string>
       </property>
@@ -1493,7 +1658,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>Red Team</string>
+       <string>Red Base</string>
       </property>
       <widget class="QLabel" name="label_18">
        <property name="geometry">
@@ -1505,7 +1670,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecting a vehicle will only guarantee that no other vehicle will spawn.What type of vehicle spawns is determined by the map. If there are no spawns for the selected vehicle, then no vehicles will spawn.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will choose which vehicles spawn, if they can spawn on that map.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Default&lt;/span&gt; will spawn the default vehicles for that map.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Custom&lt;/span&gt; will allow you to choose which vehicles to spawn and the number of vehicles to spawn.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;If teams are disabled, then Blue Base uses the spawns from Red Base.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Type:</string>
@@ -1519,6 +1684,9 @@
          <width>151</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will choose which vehicles spawn, if they can spawn on that map.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Default&lt;/span&gt; will spawn the default vehicles for that map.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Custom&lt;/span&gt; will allow you to choose which vehicles to spawn and the number of vehicles to spawn.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;If teams are disabled, then Blue Base uses the spawns from Red Base.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="currentIndex">
         <number>0</number>
@@ -1754,7 +1922,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>Blue Team</string>
+       <string>Blue Base</string>
       </property>
       <widget class="QComboBox" name="a_vehi_type_2">
        <property name="geometry">
@@ -1764,6 +1932,9 @@
          <width>151</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will choose which vehicles spawn, if they can spawn on that map.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Default&lt;/span&gt; will spawn the default vehicles for that map.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Custom&lt;/span&gt; will allow you to choose which vehicles to spawn and the number of vehicles to spawn.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;If teams are disabled, then Blue Base uses the spawns from Red Base.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="currentIndex">
         <number>0</number>
@@ -1824,7 +1995,7 @@
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecting a vehicle will only guarantee that no other vehicle will spawn.What type of vehicle spawns is determined by the map. If there are no spawns for the selected vehicle, then no vehicles will spawn.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will choose which vehicles spawn, if they can spawn on that map.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Default&lt;/span&gt; will spawn the default vehicles for that map.&lt;br/&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Custom&lt;/span&gt; will allow you to choose which vehicles to spawn and the number of vehicles to spawn.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;If teams are disabled, then Blue Base uses the spawns from Red Base.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
         <string>Type:</string>
@@ -2014,6 +2185,9 @@
         <height>21</height>
        </rect>
       </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If set, vehicles will respawn if left alone for this amount of time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>Vehicle Respawn Time:</string>
       </property>
@@ -2042,6 +2216,9 @@
         <width>111</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If set, vehicles will respawn if left alone for this amount of time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="suffix">
        <string> sec</string>
@@ -2113,6 +2290,67 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>a_variant_name</tabstop>
+  <tabstop>a_gametype_type</tabstop>
+  <tabstop>a_ctf_assault</tabstop>
+  <tabstop>a_ctf_flag_must_reset</tabstop>
+  <tabstop>a_ctf_flag_must_be_at_home</tabstop>
+  <tabstop>a_ctf_single_flag_time</tabstop>
+  <tabstop>a_ctf_caps_to_win</tabstop>
+  <tabstop>a_slayer_kill_in_order</tabstop>
+  <tabstop>a_slayer_death_bonus</tabstop>
+  <tabstop>a_slayer_kill_penalty</tabstop>
+  <tabstop>a_slayer_kills_to_win</tabstop>
+  <tabstop>a_oddball_ball_type</tabstop>
+  <tabstop>a_oddball_trait_with_ball</tabstop>
+  <tabstop>a_oddball_speed_with_ball</tabstop>
+  <tabstop>a_oddball_trait_without_ball</tabstop>
+  <tabstop>a_oddball_ball_count</tabstop>
+  <tabstop>a_oddball_max_points</tabstop>
+  <tabstop>a_oddball_random_ball</tabstop>
+  <tabstop>a_king_moving_hill</tabstop>
+  <tabstop>a_king_minutes_to_win</tabstop>
+  <tabstop>a_race_order</tabstop>
+  <tabstop>a_race_team_score</tabstop>
+  <tabstop>a_race_laps_to_win</tabstop>
+  <tabstop>a_time_limit</tabstop>
+  <tabstop>a_objectives_indicator</tabstop>
+  <tabstop>a_health_slider</tabstop>
+  <tabstop>a_health_percent</tabstop>
+  <tabstop>a_shields_enabled</tabstop>
+  <tabstop>a_weapons</tabstop>
+  <tabstop>a_generic_weapons</tabstop>
+  <tabstop>a_infinite_grenades</tabstop>
+  <tabstop>a_respawn_base</tabstop>
+  <tabstop>a_respawn_suicide</tabstop>
+  <tabstop>a_respawn_betrayal</tabstop>
+  <tabstop>a_respawn_growth</tabstop>
+  <tabstop>a_lives</tabstop>
+  <tabstop>a_motion_sensor</tabstop>
+  <tabstop>a_invisible</tabstop>
+  <tabstop>a_odd_man_out</tabstop>
+  <tabstop>a_teams_enabled</tabstop>
+  <tabstop>a_teams_balance</tabstop>
+  <tabstop>a_teams_hud</tabstop>
+  <tabstop>a_teams_friendly_fire</tabstop>
+  <tabstop>a_vehi_respawn_time</tabstop>
+  <tabstop>a_vehi_type_1</tabstop>
+  <tabstop>a_num_warthogs_1</tabstop>
+  <tabstop>a_num_ghosts_1</tabstop>
+  <tabstop>a_num_scorpions_1</tabstop>
+  <tabstop>a_num_rockets_1</tabstop>
+  <tabstop>a_num_banshees_1</tabstop>
+  <tabstop>a_num_turrets_1</tabstop>
+  <tabstop>a_vehi_type_2</tabstop>
+  <tabstop>a_num_warthogs_2</tabstop>
+  <tabstop>a_num_ghosts_2</tabstop>
+  <tabstop>a_num_scorpions_2</tabstop>
+  <tabstop>a_num_rockets_2</tabstop>
+  <tabstop>a_num_banshees_2</tabstop>
+  <tabstop>a_num_turrets_2</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

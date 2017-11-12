@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>253</height>
+    <height>192</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>210</y>
+     <y>150</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -35,7 +35,7 @@
      <x>10</x>
      <y>10</y>
      <width>361</width>
-     <height>191</height>
+     <height>131</height>
     </rect>
    </property>
    <property name="text">
@@ -44,10 +44,9 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Flare Gametype Editor&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt;Version 1.2.1  credits:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt; font-weight:600; color:#220055;&quot;&gt;002&lt;/span&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt; - Developer, reverse engineering, and other cool stuff. I pretty much made the whole thing, including writing these credits.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt;Version 1.2.3  credits:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt; font-weight:600; color:#220055;&quot;&gt;002&lt;/span&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt; - I wrote this.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt; font-weight:600;&quot;&gt;nil&lt;/span&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt; - Made HDemoEditor, which inspired me to make this program.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt; font-weight:600; color:#222222;&quot;&gt;Btcc22&lt;/span&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt; - I used HAC 2 with Halo when testing? Get it at &lt;/span&gt;&lt;a href=&quot;http://blog.haloanticheat.com/&quot;&gt;&lt;span style=&quot; font-size:8.25pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://blog.haloanticheat.com/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt; font-weight:600; color:#550000;&quot;&gt;Tucker933&lt;/span&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt; - Generously hosted Open Carnage &lt;/span&gt;&lt;a href=&quot;http://opencarnage.net/&quot;&gt;&lt;span style=&quot; font-size:8.25pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://opencarnage.net&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
